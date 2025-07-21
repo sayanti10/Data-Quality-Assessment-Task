@@ -1,0 +1,38 @@
+SELECT 
+    typeof(age) AS age_type,
+    typeof(job) AS job_type,
+    typeof(marital) AS marital_type,
+    typeof(education) AS education_type,
+    typeof("default") AS default_type,
+    typeof(balance) AS balance_type,
+    typeof(housing) AS housing_type,
+    typeof(loan) AS loan_type,
+    typeof(contact) AS contact_type,
+    typeof(day) AS day_type,
+    typeof(month) AS month_type,
+    typeof(duration) AS duration_type,
+    typeof(campaign) AS campaign_type,
+    typeof(pdays) AS pdays_type,
+    typeof(previous) AS previous_type,
+    typeof(poutcome) AS poutcome_type,
+    typeof(y) AS y_type
+    
+FROM bank_full_with_errors_test
+GROUP BY 
+    age_type,
+    job_type,
+    marital_type,
+    education_type,
+    default_type,
+    balance_type,
+    housing_type,
+    loan_type,
+    contact_type,
+    day_type,
+    month_type,
+    duration_type,
+    campaign_type,
+    pdays_type,
+    previous_type,
+    poutcome_type,
+    y_type;
